@@ -6,10 +6,10 @@ $(document).ready(function() {
     var celsius;
     var tempSwap = false;
     var iconClass;
-    $.getJSON("http://ip-api.com/json", function(data2) {
+    $.getJSON("https://ip-api.com/json", function(data2) {
         lat = data2.lat;
         long = data2.lon;
-        var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=910132abb8e1a73c4149877199c83a59';
+        var api = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=910132abb8e1a73c4149877199c83a59';
         console.log(api);
         $.getJSON(api, function(data) {
             var city = data.name;
